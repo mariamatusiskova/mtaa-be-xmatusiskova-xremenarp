@@ -1,3 +1,4 @@
+# by touchit4
 FROM node:20.11.1-alpine
 COPY . /app
 WORKDIR /app
@@ -7,4 +8,4 @@ USER node
 RUN npm ci
 EXPOSE 8080
 CMD ["node", "."]
-
+#

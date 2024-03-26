@@ -1,3 +1,4 @@
+# by touch4it
 services:
   node:
     build: ./app
@@ -5,3 +6,4 @@ services:
       - NODE_ENV=production
     expose:
       - 8080
+#

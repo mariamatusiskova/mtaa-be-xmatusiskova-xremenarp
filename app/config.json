@@ -1,4 +1,8 @@
 {
     "port": 8080,
-    "host": "localhost"
+    "host": "localhost",
+    "mongo": {
+        "uri": "mongodb://mongo:27017",
+        "db": "visitordb"
+    }
 }
