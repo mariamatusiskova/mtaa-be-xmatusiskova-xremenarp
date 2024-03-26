@@ -8,7 +8,11 @@ services:
       - ./app:/app
     working_dir: /app
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     ports:
       - 8080:8080
+  mongo:
+    image: mongo:5.0.25
+    ports:
+      - 27018:27017
 #

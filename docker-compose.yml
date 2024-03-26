@@ -2,8 +2,12 @@
 services:
   node:
     build: ./app
+    depends_on:
+      - mongo
     environment:
       - NODE_ENV=production
     expose:
       - 8080
+  mongo:
+    image: mongo:5.0.25
 #
